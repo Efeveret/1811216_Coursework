@@ -1,0 +1,293 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////my code///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+*/
+body{
+    background: url("../images/istockphoto-988730014-2048x2048.jpg");
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+header{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a h1 {
+    float: left;
+    margin-top: 5px ;
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 102px;
+    padding: 3px 0px 3px 20px;
+}
+
+header a {
+    float: right;
+    color: white;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+header button {
+    float: right;
+    margin-right: 20px;
+}
+
+main{
+    background-color: white;
+    border-style: double;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    /*background-color: #6FDF81;*/
+    /*position: fixed;*/
+}
+
+.CsearchBox {
+    margin-left: 20%;
+}
+
+.CsearchBox div form div {
+    display: inline-block;
+}
+
+.CadLocation section img{
+    height: 200px;
+    width: 81%;
+    margin-top: 5px;
+}
+
+.Ccategories nav form button{
+    width: 12%;
+    height: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Ctabs {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Ctabs ul li {
+    width: 48%;
+    text-align: center;
+}
+
+.show {
+    margin: 1px 2px 2px 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 300px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    width: 300px;
+    /*display: none;*/
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
